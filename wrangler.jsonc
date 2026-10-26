@@ -1,6 +1,10 @@
 {
   "name": "portfolio21",
   "compatibility_date": "2026-10-26",
+  "workers_dev": true,
+  "routes": [
+    { "pattern": "ramchandrakarki.com.np", "custom_domain": true }
+  ],
   "assets": {
     "directory": "./dist"
   }
