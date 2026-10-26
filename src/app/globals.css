@@ -57,7 +57,8 @@ html[data-background-paused="true"] .grain { animation-play-state: paused; }
 .home-col-staggered { grid-column: 2; grid-row: 3; }
 .home-col-staggered + .home-col-staggered { grid-column: 3; }
 .site-footer { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; width: 100%; margin: 0 auto; padding: 0 calc(var(--page-gutter) + 8px) 28px; color: var(--text-muted); font-size: 10px; }
-.bottom-nav { position: fixed; z-index: 40; bottom: 0; left: 0; right: 0; height: 45px; display: flex; justify-content: center; border-top: 1px solid rgba(235,238,239,.15); background: #101012; view-transition-name: site-navigation; }
+.bottom-nav { position: fixed; z-index: 40; bottom: 0; left: 0; right: 0; height: 45px; display: flex; justify-content: center; border-top: 1px solid rgba(235,238,239,.15); background: #101012; view-transition-name: site-navigation; animation: nav-reveal 1800ms steps(1,end) both; }
+@keyframes nav-reveal { from { visibility: hidden; } to { visibility: visible; } }
 .bottom-nav::before { content: ""; position: absolute; inset: 0; pointer-events: none; opacity: .16; background-size: 180px 180px; }
 .nav-inner { position: relative; width: 480px; max-width: 100%; display: grid; grid-template-columns: repeat(4,1fr); }
 .nav-inner > a { display: grid; place-items: center; color: var(--text-muted); font-size: 11px; letter-spacing: .06em; text-decoration: none; }
