@@ -1,7 +1,10 @@
 node_modules/
 .next/
+.next-dev/
 .next-production/
 out/
+dist/
+.wrangler/
 next-env.d.ts
 *.tsbuildinfo
 *.log
