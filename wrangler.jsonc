@@ -3,7 +3,7 @@
   "compatibility_date": "2026-10-26",
   "workers_dev": true,
   "routes": [
-    { "pattern": "ramchandrakarki.com.np", "custom_domain": true }
+    { "pattern": "ramchandrakarki.com.np/*", "zone_name": "ramchandrakarki.com.np" }
   ],
   "assets": {
     "directory": "./dist"
